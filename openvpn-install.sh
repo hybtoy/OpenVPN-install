@@ -246,7 +246,7 @@ else
 	echo "   5) OpenDNS (Anycast: worldwide)"
 	echo "   6) Google (Anycast: worldwide)"
 	echo "   7) Yandex Basic (Russia)"
-	echo "   8) AdGuard DNS (Russia)"
+	echo "   8) Cloudflare (Anycast: worldwide)"
 	while [[ $DNS != "1" && $DNS != "2" && $DNS != "3" && $DNS != "4" && $DNS != "5" && $DNS != "6" && $DNS != "7" && $DNS != "8" ]]; do
 		read -p "DNS [1-8]: " -e -i 1 DNS
 	done
@@ -730,9 +730,9 @@ ifconfig-pool-persist ipp.txt" >> /etc/openvpn/server.conf
 		echo 'push "dhcp-option DNS 77.88.8.8"' >> /etc/openvpn/server.conf
 		echo 'push "dhcp-option DNS 77.88.8.1"' >> /etc/openvpn/server.conf
 		;;
-		8) #AdGuard DNS
-		echo 'push "dhcp-option DNS 176.103.130.130"' >> /etc/openvpn/server.conf
-		echo 'push "dhcp-option DNS 176.103.130.131"' >> /etc/openvpn/server.conf
+		8) #Cloudflare DNS
+		echo 'push "dhcp-option DNS 1.1.1.1"' >> /etc/openvpn/server.conf
+		echo 'push "dhcp-option DNS 1.0.0.1"' >> /etc/openvpn/server.conf
 		;;
 	esac
 echo 'push "redirect-gateway def1 bypass-dhcp" '>> /etc/openvpn/server.conf
