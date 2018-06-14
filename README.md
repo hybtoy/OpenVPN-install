@@ -18,8 +18,7 @@ You can get a cheap VPS to run this script at [Vultr](https://goo.gl/Xyd1Sc), [D
 First, get the script and make it executable :
 
 ```bash
-wget https://raw.githubusercontent.com/Angristan/OpenVPN-install/master/openvpn-install.sh
-chmod +x openvpn-install.sh
+wget https://raw.githubusercontent.com/hybtoy/OpenVPN-install/openvpn-2.4-update/openvpn-install.sh && chmod +x openvpn-install.sh && bash openvpn-install.sh
 ```
 
 Then run it :
