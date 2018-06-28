@@ -21,10 +21,6 @@ First, get the script and make it executable :
 wget https://raw.githubusercontent.com/hybtoy/OpenVPN-install/openvpn-2.4-update/openvpn-install.sh && chmod +x openvpn-install.sh && bash openvpn-install.sh
 ```
 
-Then run it :
-
-`./openvpn-install.sh`
-
 The first time you run it, you'll have to follow the assistant and answer a few questions to setup your VPN server.
 
 When OpenVPN is installed, you can run the script again, and you will get the choice to :
